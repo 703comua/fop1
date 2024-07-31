@@ -1,0 +1,90 @@
+.advantages {
+    background: var(--background-secondary-color);
+
+    &__list {
+        display: flex;
+        gap: 45px 30px;
+        // column-gap: 30px;
+        // row-gap: 45px;
+        flex-wrap: wrap;
+        counter-reset: num;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        max-width: 480px;
+        // width: calc((100% - 60px) / 3);
+        position: relative;
+        &:before {
+            content: "0" counter(num);
+            counter-increment: num;
+            font-size: 17px;
+            font-family: $titleFont;
+            color: var(--accent-color);
+            font-weight: 700;
+            position: absolute;
+            top: 8px;
+            left: 0;
+        }
+    }
+
+    &__data {
+        padding-left: 60px;
+        margin-left: 28px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 52px;
+            background-color: var(--text-primary);
+            position: absolute;
+            left: 0;
+            top: 16px;
+        }
+    }
+
+    &__name {
+        font-family: $titleFont;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 1.625;
+        color: var(--text-secondary);
+    }
+}
+
+@media screen and (max-width: 680px) {
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        &__item {
+            max-width: unset;
+            width: calc((100% - 30px) / 2);
+            // width: calc((100% - 60px) / 3);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .advantages {
+        &__item {
+            width: calc((100% - 60px) / 3);
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}

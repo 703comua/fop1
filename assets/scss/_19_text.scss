@@ -1,0 +1,132 @@
+.textpart { 
+    &__wrap {
+        max-height: 500px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+        }
+    }
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__content {
+    }
+    &__open {
+        @include flex();
+        justify-content: center;
+        .icon {
+        }
+        &-btn {
+            &.active {
+                .icon {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+.textblock {
+    font-size: 16px;
+    color: #212631;
+    h2,
+    h3 {
+        margin-bottom: 0.77419355em;
+        margin-top: 2em;
+        font-family: $titleFont;
+        line-height: 1.4;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    ol,
+    ul {
+        line-height: 1.7;
+        list-style: none;
+    }
+    ul {
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        padding-left: 30px;
+        li {
+            position: relative;
+            padding-left: 2em;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+            &:before {
+                content: "";
+                box-sizing: border-box;
+                position: absolute;
+                top: 0.45em;
+                left: 0;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 2px solid $neonColor;
+                border-radius: 50%;
+            }
+        }
+    }
+    ol {
+        list-style: none;
+        max-width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        // counter-reset: section;
+        counter-reset: li;
+        li {
+            position: relative;
+            padding-left: 2em;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+            &:before {
+                counter-increment: li;
+                content: counters(li, ".") ". ";
+                // counter-increment: section;
+                // content: counter(section) ".";
+                position: absolute;
+                left: 0;
+                font-weight: 700;
+                color: $neonColor;
+            }
+            ol {
+                margin: 0;
+            }
+        }
+    }
+    p {
+        margin-bottom: 30px;
+        line-height: 1.7;
+    }
+    a {
+        text-decoration: underline;
+        color: $neonColor;
+        // font-weight: 500;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}

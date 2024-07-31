@@ -1,0 +1,125 @@
+.intro {
+    &__container {
+        // max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__slideshow {
+    }
+
+    .slideshow {
+        &__list {
+        }
+        &__item {
+            position: relative;
+        }
+        &__img {
+            height: 500px;
+            position: relative;
+            &:after{
+                content: '';
+                background-color: rgba($color: #000000, $alpha: .7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__pic {
+            // border-top-left-radius: 10px;
+        }
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+            box-shadow: var(--el-box-shadow);
+            max-width: 500px;
+            border-radius: 10px;
+            z-index: 2;
+            padding: 0 20px;
+            background-color: unset;
+            color: var(--background-color);
+            
+            // left: 100px;
+            // padding: 48px 70px;
+            // background-color: var(--background-color);
+        }
+        &__title {
+            font-size: 32px;
+            font-family: $titleFont;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        &__desc {
+            margin-bottom: 20px;
+        }
+        &__link {
+            display: inline-block;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        .slideshow {
+            &__list {
+            }
+            &__item {
+            }
+            &__img {
+                &:after{
+                }
+            }
+            &__pic {
+            }
+            &__text {
+                left: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .intro {
+        &__container {
+            padding-left: 15px;
+            padding-right: 15px; 
+        }
+        .slideshow {
+            &__list {
+            }
+            &__item {
+            }
+            &__img {
+                &:after{
+                    background-color: rgba($color: #000000, $alpha: .1);
+                }
+            }
+            &__pic {
+            }
+            &__text {
+                left: 100px;
+                padding: 48px 70px;
+                background-color: var(--background-color);
+                color: var(--text-primary);
+            }
+            &__title {
+            }
+            &__desc {
+            }
+            &__link {
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+}

@@ -1,0 +1,122 @@
+@mixin flex() {
+    display: flex;
+    align-items: center;
+}
+
+.m0 {
+    margin: 0;
+}
+
+@mixin marginsTop() {
+    @for $i from 0 through 100 {
+        .mt#{$i} {
+            margin-top: #{$i}px;
+        }
+    }
+}
+@include marginsTop();
+
+@mixin marginsBottom() {
+    @for $i from 0 through 100 {
+        .mb#{$i} {
+            margin-bottom: #{$i}px;
+        }
+    }
+}
+@include marginsBottom();
+
+@mixin marginsLeft() {
+    @for $i from 0 through 100 {
+        .ml#{$i} {
+            margin-left: #{$i}px;
+        }
+    }
+}
+@include marginsLeft();
+
+@mixin marginsRight() {
+    @for $i from 0 through 100 {
+        .mr#{$i} {
+            margin-right: #{$i}px;
+        }
+    }
+}
+@include marginsRight();
+
+@mixin paddingsTop() {
+    @for $i from 0 through 100 {
+        .pt#{$i} {
+            padding-top: #{$i}px;
+        }
+    }
+}
+@include paddingsTop();
+
+@mixin paddingsBottom() {
+    @for $i from 0 through 100 {
+        .pb#{$i} {
+            padding-bottom: #{$i}px;
+        }
+    }
+}
+@include paddingsBottom();
+
+@mixin paddingsLeft() {
+    @for $i from 0 through 100 {
+        .pl#{$i} {
+            padding-left: #{$i}px;
+        }
+    }
+}
+@include paddingsLeft();
+
+@mixin paddingsRight() {
+    @for $i from 0 through 100 {
+        .pr#{$i} {
+            padding-right: #{$i}px;
+        }
+    }
+}
+@include paddingsRight();
+
+@mixin width() {
+    @for $i from 1 through 100 {
+        .w#{$i} {
+            width: #{$i}px;
+        }
+    }
+}
+@include width();
+
+@import "_0_reset";
+@import "_0_normalize";
+@import "_1_fonts";
+@import "_2_basic";
+@import '_3_video'; 
+@import "_4_swiper";
+@import "_5_tooltip";
+@import "_6_modals";
+// @import "_7_breadcrumbs";
+@import "_8_page";
+
+@import "_10_header";
+@import "_11_intro"; 
+@import "_12_experience";
+@import "_13_services";
+@import "_14_blog";
+@import "_15_advantages";
+@import "_16_reviews";
+// @import "_17_catalog";
+// @import "_18_blog";
+// @import "_19_text";
+
+@import "_20_footer";
+// @import "_21_product_block";
+// @import "_22_customer-reviews";
+// @import "_23_end-section";
+// @import '_24_product-page'; 
+// @import '_25_parent-section';
+// @import '_26_page-all-brands';
+// @import '_26_page-all-brands';
+// @import '_27_page-about-us';
+// @import '_28_cart';
