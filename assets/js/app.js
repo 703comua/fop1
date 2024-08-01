@@ -232,6 +232,78 @@ $(document).ready(function () {
     $(".email").on("blur", function () {
         checkEmail($(this));
     });
+
+    let state = true;
+
+    // text-block open
+    $(".text__open-btn").on("click", function () {
+        const target = $(this).attr("data-target");
+        // console.log($(target));
+        // console.log(state);
+        let btn = $(this);
+        let btnSpan = $(this).find("span");
+        let textBlockTitleHeight = $(".textblock__title").height();
+        let textBlockContentHeight = $(".textblock__content").height();
+
+        if (state && !$(this).hasClass("open")) {
+            // разворачиваем текстовый блок
+            $(target).addClass("open");
+            $(target).animate(
+                {
+                    maxHeight: textBlockTitleHeight + textBlockContentHeight + 100, // ширина элемента
+                },
+                {
+                    duration: 300, // продолжительность анимации
+                    easing: "linear", // скорость анимации
+                    complete: function () {
+                        // callback
+                        // alert("текстовый блок развернут");
+                        btnSpan.text("Свернуть");
+                        btn.addClass("active");
+                    },
+                }
+            );
+        } else {
+            // сворачиваем текстовый блок
+            $(target).animate(
+                {
+                    maxHeight: 500, // ширина элемента
+                },
+                {
+                    duration: 300, // продолжительность анимации
+                    easing: "linear", // скорость анимации
+                    complete: function () {
+                        // callback
+                        // alert("текстовый блок свернут");
+                        btnSpan.text("Читать далее");
+                        btn.removeClass("active");
+                        $(target).removeClass("open");
+                    },
+                }
+            );
+        }
+        state = !state;
+    });
+
+    $(".question_js").on("click", function () {
+        let _this = $(this),
+            item = _this.closest(".faq__item"),
+            container = _this.closest(".faq__list"),
+            items = container.find(".faq__item"),
+            content = item.find(".faq__answer"),
+            otherContents = container.find(".faq__answer"),
+            duration = 300;
+
+        if (!item.hasClass("active")) {
+            items.removeClass("active");
+            item.addClass("active");
+            otherContents.stop(true, true).slideUp(duration);
+            content.stop(true, true).slideDown(duration);
+        } else {
+            content.stop(true, true).slideUp(duration);
+            item.removeClass("active");
+        }
+    });
 });
 
 function myLazyload() {

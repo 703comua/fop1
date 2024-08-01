@@ -224,10 +224,25 @@
         /*--- callback ---*/
         /*----------------*/
         .nav__callback {
+            padding: 12px;
         }
         .callback {
         }
         .callback__icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .header {
+        &__nav {
+            .nav__callback {
+                padding: 12px 44px 12px 20px;
+            }
+            .callback__icon {
+                display: block;
+            }
         }
     }
 }

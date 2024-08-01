@@ -97,9 +97,6 @@
 
                         <ul class="nav__menu menu menu_js">
                             <li class="menu__item">
-                                <span class="menu__link active"> Главная </span>
-                            </li>
-                            <li class="menu__item">
                                 <a class="menu__link" href="#"> О нас </a>
                             </li>
                             <li class="menu__item">
@@ -183,7 +180,7 @@
                             data-fancybox
                             data-src="#modal-callback"
                         >
-                            Callback
+                            Заказать звонок
                             <svg class="callback__icon icon" width="16" height="16">
                                 <use href="./assets/svg/icons.svg#icon-callback"></use>
                             </svg>
@@ -195,85 +192,101 @@
             <main class="main page">
                 <section class="page__intro intro section">
                     <div class="intro__container container">
-                        <div class="intro__slideshow slideshow swiper">
-                            <!-- Additional required wrapper -->
-                            <ul class="slideshow__list swiper-wrapper">
-                                <li class="slideshow__item swiper-slide">
-                                    <div class="slideshow__img _ibg">
-                                        <img class="slideshow__pic" src="assets/img/slides/slide1.jpg" alt="cover" />
-                                    </div>
-                                    <div class="slideshow__text">
-                                        <h3 class="slideshow__title">Название улсуги №1</h3>
-                                        <p class="slideshow__desc">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
-                                            reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque enim
-                                            distinctio aut nulla.
-                                        </p>
-                                        <a href="#" class="slideshow__link btn btn-transparent">
-                                            Читать подробнее
-                                            <svg class="slideshow__icon icon" width="14" height="14">
-                                                <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="slideshow__item swiper-slide">
-                                    <div class="slideshow__img _ibg">
-                                        <img class="slideshow__pic" src="assets/img/slides/slide2.jpg" alt="cover" />
-                                    </div>
-                                    <div class="slideshow__text">
-                                        <h3 class="slideshow__title">Название улсуги №2</h3>
-                                        <p class="slideshow__desc">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
-                                            reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque enim
-                                            distinctio aut nulla.
-                                        </p>
-                                        <a href="#" class="slideshow__link btn btn-transparent">
-                                            Читать подробнее
-                                            <svg class="slideshow__icon icon" width="14" height="14">
-                                                <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="slideshow__item swiper-slide">
-                                    <div class="slideshow__img _ibg">
-                                        <img class="slideshow__pic" src="assets/img/slides/slide3.jpg" alt="cover" />
-                                    </div>
-                                    <div class="slideshow__text">
-                                        <h3 class="slideshow__title">Название улсуги №3</h3>
-                                        <p class="slideshow__desc">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
-                                            reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque enim
-                                            distinctio aut nulla.
-                                        </p>
-                                        <a href="#" class="slideshow__link btn btn-transparent">
-                                            Читать подробнее
-                                            <svg class="slideshow__icon icon" width="14" height="14">
-                                                <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                        <div class="intro__wrap">
+                            <div class="intro__slideshow slideshow swiper">
+                                <!-- Additional required wrapper -->
+                                <ul class="slideshow__list swiper-wrapper">
+                                    <li class="slideshow__item swiper-slide">
+                                        <div class="slideshow__img _ibg">
+                                            <img class="slideshow__pic" src="assets/img/slides/slide1.jpg" alt="cover" />
+                                        </div>
+                                        <div class="slideshow__text">
+                                            <h3 class="slideshow__title">Название улсуги №1</h3>
+                                            <p class="slideshow__desc">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
+                                                reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque
+                                                enim distinctio aut nulla.
+                                            </p>
+                                            <a href="#" class="slideshow__link btn btn-transparent">
+                                                Читать подробнее
+                                                <svg class="slideshow__icon icon" width="14" height="14">
+                                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slideshow__item swiper-slide">
+                                        <div class="slideshow__img _ibg">
+                                            <img class="slideshow__pic" src="assets/img/slides/slide2.jpg" alt="cover" />
+                                        </div>
+                                        <div class="slideshow__text">
+                                            <h3 class="slideshow__title">Название улсуги №2</h3>
+                                            <p class="slideshow__desc">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
+                                                reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque
+                                                enim distinctio aut nulla.
+                                            </p>
+                                            <a href="#" class="slideshow__link btn btn-transparent">
+                                                Читать подробнее
+                                                <svg class="slideshow__icon icon" width="14" height="14">
+                                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slideshow__item swiper-slide">
+                                        <div class="slideshow__img _ibg">
+                                            <img class="slideshow__pic" src="assets/img/slides/slide3.jpg" alt="cover" />
+                                        </div>
+                                        <div class="slideshow__text">
+                                            <h3 class="slideshow__title">Название улсуги №3</h3>
+                                            <p class="slideshow__desc">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, inventore a ut cum saepe non
+                                                reprehenderit consequatur molestiae commodi est exercitationem velit sapiente facilis, odio, itaque
+                                                enim distinctio aut nulla.
+                                            </p>
+                                            <a href="#" class="slideshow__link btn btn-transparent">
+                                                Читать подробнее
+                                                <svg class="slideshow__icon icon" width="14" height="14">
+                                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
 
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev-slide">
-                                <svg class="icon" width="16" height="16">
-                                    <use href="./assets/svg/icons.svg#icon-chevron-down"></use>
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next-slide">
-                                <svg class="icon" width="16" height="16">
-                                    <use href="./assets/svg/icons.svg#icon-chevron-down"></use>
-                                </svg>
-                            </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev-slide">
+                                    <svg class="icon" width="16" height="16">
+                                        <use href="./assets/svg/icons.svg#icon-chevron-down"></use>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next-slide">
+                                    <svg class="icon" width="16" height="16">
+                                        <use href="./assets/svg/icons.svg#icon-chevron-down"></use>
+                                    </svg>
+                                </div>
 
-                            <!-- If we need scrollbar -->
-                            <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- If we need scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>
+                        </div>
+                        <div class="intro__action">
+                            <h3 class="intro__title">Получить консультацию</h3>
+                            <form class="intro__form" action="">
+                                <p class="intro__text">
+                                    Вы можете бесплатно оставить вопрос, а также получить быстрый и гарантированный ответ через <span class="intro__link" data-fancybox data-src="#modal-callback">индивидуальную консультацию</span>.
+                                </p>
+                                <input class="input" type="text" placeholder="Имя" />
+                                <input class="input" type="text" placeholder="Email" />
+                                <textarea class="input" name="" id="" placeholder="Текст сообщения"></textarea>
+
+                                <button type="submit" class="btn btn-green btn-no-icon intro__btn">
+                                    Задать вопрос
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -323,9 +336,7 @@
 
                 <section class="page__services services section">
                     <div class="services__container container">
-                        <p class="services__subtitle section-subtitle">
-                            Чем мы занимаемся
-                        </p>
+                        <p class="services__subtitle section-subtitle">Чем мы занимаемся</p>
                         <h2 class="services__title section-title">Наши услуги</h2>
                         <ul class="services__list">
                             <li class="services__item">
@@ -333,8 +344,8 @@
                                     <h3 class="services__name">Название услуги №1</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
-                                        sapiente cupiditate est voluptatum at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
-                                        sapiente cupiditate est voluptatum at!
+                                        sapiente cupiditate est voluptatum at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                                        quas beatae! Blanditiis in commodi nihil sapiente cupiditate est voluptatum at!
                                     </p>
                                     <button class="services__btn btn" type="button">
                                         Подробнее
@@ -346,7 +357,6 @@
                             </li>
                             <li class="services__item">
                                 <a class="services__link" href="#">
-                                    
                                     <h3 class="services__name">Название услуги №2</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
@@ -362,12 +372,11 @@
                             </li>
                             <li class="services__item">
                                 <a class="services__link" href="#">
-                                    
                                     <h3 class="services__name">Название услуги №3</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
                                         sapiente cupiditate est voluptatum at! dipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
-                                        sapiente 
+                                        sapiente
                                     </p>
                                     <button class="services__btn btn" type="button">
                                         Подробнее
@@ -379,7 +388,6 @@
                             </li>
                             <li class="services__item">
                                 <a class="services__link" href="#">
-                                    
                                     <h3 class="services__name">Название услуги №4</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
@@ -395,11 +403,11 @@
                             </li>
                             <li class="services__item">
                                 <a class="services__link" href="#">
-                                    
                                     <h3 class="services__name">Название услуги №5</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
-                                        sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at!
+                                        sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est
+                                        voluptatum at! sapiente cupiditate est voluptatum at!
                                     </p>
                                     <button class="services__btn btn" type="button">
                                         Подробнее
@@ -411,11 +419,11 @@
                             </li>
                             <li class="services__item">
                                 <a class="services__link" href="#">
-                                    
                                     <h3 class="services__name">Название услуги №6</h3>
                                     <p class="services__desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas beatae! Blanditiis in commodi nihil
-                                        sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at!
+                                        sapiente cupiditate est voluptatum at! sapiente cupiditate est voluptatum at! sapiente cupiditate est
+                                        voluptatum at! sapiente cupiditate est voluptatum at!
                                     </p>
                                     <button class="services__btn btn" type="button">
                                         Подробнее
@@ -429,40 +437,253 @@
                     </div>
                 </section>
 
+                <section class="page__faq faq section">
+                    <div class="faq__container container">
+                        <p class="section-subtitle">Топ вопросы от клиентов</p>
+                        <h2 class="section-title">Часто задающие вопросы</h2>
+                        <ul class="faq__list">
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <h3 class="faq__question question_js">When will my order be delivered?</h3>
+                                <div class="faq__answer">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et minus totam hic vitae sit placeat eos
+                                        consequuntur tenetur illo, adipisci beatae in vero blanditiis aliquam nam! Blanditiis, eum veritatis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi nobis ullam at quibusdam amet ratione!
+                                        Nostrum vel consequuntur laboriosam aut quasi dolor, perferendis maiores debitis iure nihil eius quis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content-center">
+                            <button class="btn" type="button">
+                                Все вопросы
+                                <svg class="icon" width="14" height="14">
+                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page__advantages advantages section">
+                    <div class="advantages__container container">
+                        <p class="section-subtitle">Наши преимущества</p>
+                        <h2 class="section-title">Почему нам доверяют</h2>
+                        <ol class="advantages__list">
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">High Quality Hardware</h3>
+                                    <p class="advantages__desc">We use top-notch hardware to develop the most efficient apps for our customers</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">Dedicated 24\7 Support</h3>
+                                    <p class="advantages__desc">
+                                        You can rely on our 24/7 tech support that will gladly solve any app issue you may have.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">30-Day Money-back Guarantee</h3>
+                                    <p class="advantages__desc">
+                                        If you are not satisfied with our apps, we will return your money in the first 30 days.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">Agile and Fast Working Style</h3>
+                                    <p class="advantages__desc">
+                                        This type of approach to our work helps our specialists to quickly develop better apps.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">Some Apps are Free</h3>
+                                    <p class="advantages__desc">We also develop free apps that can be downloaded online without any payments.</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__data">
+                                    <h3 class="advantages__name">High Level of Usability</h3>
+                                    <p class="advantages__desc">All our products have high usability allowing users to easily operate the apps.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="page__reviews reviews section">
+                    <div class="reviews__container container">
+                        <p class="section-subtitle">Отзывы клиентов</p>
+                        <h2 class="section-title">О нас говорят</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__item">
+                                <div class="reviews__stars stars">
+                                    <div class="stars__active w70"></div>
+                                </div>
+                                <p class="reviews__position">Постоянный клиент</p>
+                                <h3 class="reviews__name">Catherine Williams</h3>
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Esse itaque, similique hic maiores accusamus architecto facere quaerat laboriosam
+                                    voluptate odit ducimus sed consectetur distinctio explicabo dolorem, repudiandae placeat exercitationem culpa.
+                                </p>
+                            </li>
+                            <li class="reviews__item">
+                                <div class="reviews__stars stars">
+                                    <div class="stars__active w70"></div>
+                                </div>
+                                <p class="reviews__position">Постоянный клиент</p>
+                                <h3 class="reviews__name">Catherine Williams</h3>
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similrem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque,
+                                    similique hic ique hic maiores accusamus architecto facere quaerat laboriosam voluptate odit ducimus sed
+                                    consectetur distinctio explicabo dolorem, repudiandae placeat exercitationem culpa.
+                                </p>
+                            </li>
+                            <li class="reviews__item">
+                                <div class="reviews__stars stars">
+                                    <div class="stars__active w70"></div>
+                                </div>
+                                <p class="reviews__position">Постоянный клиент</p>
+                                <h3 class="reviews__name">Catherine Williams</h3>
+                                <p class="reviews__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic maiores accusamus architecto
+                                    facere quaerat larem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum
+                                    dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque,
+                                    similique hic boriosam voluptate odit ducimus sed consectetur distinctio explicabo dolorem, repudiandae placeat
+                                    exercitationem culpa.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="content-center">
+                            <button class="btn" type="button">
+                                Все отзывы
+                                <svg class="icon" width="14" height="14">
+                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="page__blog blog section">
                     <div class="blog__container container">
-                        <p class="section-subtitle">
-                            Статьи блога
-                        </p>
+                        <p class="section-subtitle">Статьи блога</p>
                         <h2 class="section-title">Последние новости</h2>
                         <div class="blog__list">
                             <article class="blog__item">
                                 <a class="blog__link" href="#">
-                                    <img class="blog__img" src="./assets/img/blog/news-img-1.jpg" alt="">
+                                    <img class="blog__img" src="./assets/img/blog/news-img-1.jpg" alt="" />
                                     <div class="blog__data">
                                         <span class="blog__date">07/01/20204</span>
                                         <h3 class="blog__name">Название ности или статьи №1</h3>
-                                        <p class="blog__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem ratione.</p>
+                                        <p class="blog__desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio
+                                            accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem
+                                            ratione.
+                                        </p>
                                     </div>
                                 </a>
                             </article>
                             <article class="blog__item">
                                 <a class="blog__link" href="#">
-                                    <img class="blog__img" src="./assets/img/blog/news-img-2.jpg" alt="">
+                                    <img class="blog__img" src="./assets/img/blog/news-img-2.jpg" alt="" />
                                     <div class="blog__data">
                                         <span class="blog__date">24/05/20204</span>
                                         <h3 class="blog__name">Название ности или статьи №1</h3>
-                                        <p class="blog__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem ratione.</p>
+                                        <p class="blog__desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio
+                                            accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem
+                                            ratione.
+                                        </p>
                                     </div>
                                 </a>
                             </article>
                             <article class="blog__item">
                                 <a class="blog__link" href="#">
-                                    <img class="blog__img" src="./assets/img/blog/news-img-3.jpg" alt="">
+                                    <img class="blog__img" src="./assets/img/blog/news-img-3.jpg" alt="" />
                                     <div class="blog__data">
                                         <span class="blog__date">30/07/20204</span>
                                         <h3 class="blog__name">Название ности или статьи №1</h3>
-                                        <p class="blog__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem ratione.</p>
+                                        <p class="blog__desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatibus expedita? Optio
+                                            accusantium ad laboriosam, velit, quis minima mollitia obcaecati architecto nihil dolorem, exercitationem
+                                            ratione.
+                                        </p>
                                     </div>
                                 </a>
                             </article>
@@ -478,195 +699,91 @@
                     </div>
                 </section>
 
-                <section class="page__advantages advantages section">
-                    <div class="advantages__container container">
-                        <p class="section-subtitle">
-                            Наши преимущества
-                        </p>
-                        <h2 class="section-title">Почему нам доверяют</h2>
-                        <ol class="advantages__list">
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">High Quality Hardware</h3>
-                                    <p class="advantages__desc">We use top-notch hardware to develop the most efficient apps for our customers</p>
-                                </div>
-                            </li>
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">Dedicated 24\7 Support</h3>
-                                    <p class="advantages__desc">You can rely on our 24/7 tech support that will gladly solve any app issue you may have.</p>
-                                </div>
-                            </li>
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">30-Day Money-back Guarantee</h3>
-                                    <p class="advantages__desc">If you are not satisfied with our apps, we will return your money in the first 30 days.</p>
-                                </div>
-                            </li>
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">Agile and Fast Working Style</h3>
-                                    <p class="advantages__desc">This type of approach to our work helps our specialists to quickly develop better apps.</p>
-                                </div>
-                            </li>
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">Some Apps are Free</h3>
-                                    <p class="advantages__desc">We also develop free apps that can be downloaded online without any payments.</p>
-                                </div>
-                            </li>
-                            <li class="advantages__item">
-                                <div class="advantages__data">
-                                    <h3 class="advantages__name">High Level of Usability</h3>
-                                    <p class="advantages__desc">All our products have high usability allowing users to easily operate the apps.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="page__reviews reviews section">
-                    <div class="reviews__container container">
-                        <p class="section-subtitle">
-                            Отзывы клиентов
-                        </p>
-                        <h2 class="section-title">О нас говорят</h2>
-                        <ul class="reviews__list">
-                            <li class="reviews__item">
-                                <div class="reviews__stars stars">
-                                    <div class="stars__active w70"></div>
-                                </div>
-                                <p class="reviews__position">Постоянный клиент</p>
-                                <h3 class="reviews__name">Catherine Williams</h3>
-                                <p class="reviews__text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic maiores accusamus architecto facere quaerat laboriosam voluptate odit ducimus sed consectetur distinctio explicabo dolorem, repudiandae placeat exercitationem culpa.
+                <section class="page__textblock textblock section">
+                    <div class="textblock__container container">
+                        <p class="section-subtitle">Консультации по бухгалтерскому учету</p>
+                        <h2 class="textblock__title section-title">Юрист-бухгалтер в Одессе</h2>
+                        <div class="text__wrap">
+                            <div class="textblock__content text-content">
+                                <p>
+                                    Мы предлагаем удаленное бухгалтерское обслуживание Вашего предприятия нашими специалистами по бухгалтерскому учету
+                                    и аудиту.
                                 </p>
-                            </li>
-                            <li class="reviews__item">
-                                <div class="reviews__stars stars">
-                                    <div class="stars__active w70"></div>
-                                </div>
-                                <p class="reviews__position">Постоянный клиент</p>
-                                <h3 class="reviews__name">Catherine Williams</h3>
-                                <p class="reviews__text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similrem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic ique hic maiores accusamus architecto facere quaerat laboriosam voluptate odit ducimus sed consectetur distinctio explicabo dolorem, repudiandae placeat exercitationem culpa.
+                                <h2>Наши услуги включают следующее:</h2>
+                                <ul>
+                                    <li>исчисление налогов и их уплата;</li>
+                                    <li>
+                                        подготовка и сдача налоговой и бухгалтерской отчетности в органы Государственной фискальной службы Украины;
+                                    </li>
+                                    <li>подготовка и подача «зарплатной» отчетности в органы ДФС Украины;</li>
+                                    <li>взаимодействие и урегулирование вопросов с органами статистики и ДФС Украины;</li>
+                                    <li>проведение сверок с контрагентами и государственными органами;</li>
+                                    <li>
+                                        отслеживание нововведений в регулировании по вопросам бухгалтерского и налогового учета и оперативное
+                                        реагирование на них.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Мы действуем как юридическое лицо (общество с ограниченной ответственностью). Подписывая договор с нами, Вы
+                                    освобождаетесь от необходимости оплачивать заработную плату и предполагаемые законодательством платежи в пользу
+                                    государства за наемного бухгалтера.
                                 </p>
-                            </li>
-                            <li class="reviews__item">
-                                <div class="reviews__stars stars">
-                                    <div class="stars__active w70"></div>
-                                </div>
-                                <p class="reviews__position">Постоянный клиент</p>
-                                <h3 class="reviews__name">Catherine Williams</h3>
-                                <p class="reviews__text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic maiores accusamus architecto facere quaerat larem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic rem ipsum dolor sit amet consectetur, adipisicing elit. Esse itaque, similique hic boriosam voluptate odit ducimus sed consectetur distinctio explicabo dolorem, repudiandae placeat exercitationem culpa.
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="content-center">
-                            <button class="btn" type="button">
-                                Все отзывы
-                                <svg class="icon" width="14" height="14">
-                                    <use href="./assets/svg/icons.svg#icon-arrow-right"></use>
+                                <h3>С точки зрения Ваших интересов, как работодателя, мы:</h3>
+                                <ul>
+                                    <li>проводим ежемесячный расчет и перечисление зарплаты Вашим сотрудникам;</li>
+                                    <li>рассчитываем отпускные, больничные и другие выплаты;</li>
+                                    <li>сдаем «зарплатную» отчетность;</li>
+                                    <li>наши юристы и адвокаты консультируют Вас по вопросам трудового законодательства.</li>
+                                </ul>
+                                <h2>В чем наши преимущества:</h2>
+                                <ul>
+                                    <li>
+                                        мы используем исключительно лицензионное программное обеспечение для ведения бухгалтерского и налогового
+                                        учета;
+                                    </li>
+                                    <li>
+                                        всю информацию мы сохраняем на удаленном физическом сервере, данные с которого ежедневно копируются в облачное
+                                        хранилище;
+                                    </li>
+                                    <li>мы получаем необходимые сертификаты и подключаем предприятие к электронным системам сдачи отчетности;</li>
+                                    <li>
+                                        Ваши документы находятся в офисе нашего адвокатского бюро, что предусматривает дополнительные гарантии
+                                        сохранности информации и минимизирует риски получения незаконного вмешательства со стороны правоохранительных
+                                        органов;
+                                    </li>
+                                    <li>
+                                        наша команда состоит из адвокатов, юристов и бухгалтеров, что в комплексе предусматривает наиболее полное
+                                        сопровождение деятельности предприятия.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text__open content-center">
+                            <button type="button" class="text__open-btn btn btn-transparent" data-target=".text__wrap">
+                                <span>Читать далее</span>
+                                <svg class="icon" width="16" height="16">
+                                    <use xlink:href="./assets/svg/icons.svg#icon-chevron-down"></use>
                                 </svg>
                             </button>
                         </div>
                     </div>
                 </section>
-
-                <section class="page__textblock textblock section">
-                    <div class="textblock__container container">
-                        <p class="section-subtitle">
-                            Консультации по бухгалтерскому учету
-                        </p>
-                        <h2 class="section-title">Юрист-бухгалтер в Одессе</h2>
-                        <div class="textblock__content text-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque delectus odit at similique fugiat ab eos architecto cupiditate error quibusdam, voluptatum quaerat ipsa explicabo quae culpa obcaecati tenetur asperiores!</p>
-                            <h2>H2 Heading</h2>
-                            <h3>H3 Heading</h3>
-                            <h4>H4 Heading</h4>
-                            <h5>H5 Heading</h5>
-                            <h6>H6 Heading</h6>
-                            <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find
-                                exactly what he/she is looking for. With advanced features of activating account and new login widgets,
-                                you will definitely have a great experience of using our web page.</p>
-                            <h3>HTML Text Elements</h3>
-                            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                            <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                            <p><u>This line of text will render as underlined</u></p>
-                            <p><small>This line of text is meant to be treated as fine print.</small></p>
-                            <p><strong>This line rendered as bold text.</strong></p>
-                            <p><em>This line rendered as italicized text.</em></p>
-                            <p>This line width <a href="#!">Link</a></p>
-                            <h4>Blockquote</h4>
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Oleh Koval</footer>
-                            </blockquote>
-                            <br>
-                            <h4>Ordered & Unordered Lists</h4>
-                            <ul>
-                                <li><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit.</li>
-                                <li>Perspiciatis deleniti deserunt tempora</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality
-                                    Assurance. They became our true business partners over the past three years.</li>
-                                <li>Ethics</li>
-                            </ul>
-                            <ol>
-                                <li><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit.</li>
-                                <li>Perspiciatis deleniti deserunt tempora</li>
-                                <li>Lorem ipsum dolor sit amet
-                                    <ol>
-                                <li><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit.</li>
-                                <li>Perspiciatis deleniti deserunt tempora</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality
-                                    Assurance. They became our true business partners over the past three years.</li>
-                                <li>Ethics</li>
-                            </ol>
-                                </li>
-                                <li>PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality
-                                    Assurance. They became our true business partners over the past three years.</li>
-                                <li>Ethics</li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="page__faq faq section">
-                    <div class="faq__container container">
-                        <p class="section-subtitle">
-                            Топ вопросы от клиентов
-                        </p>
-                        <h2 class="section-title">Часто задающие вопросы</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore, aspernatur minus consequuntur, laboriosam aperiam nisi, assumenda fugiat ea dignissimos optio sit est debitis. Iusto error quis officiis amet saepe.</p>
-                        <p>Lorem ipsuminus consequuntur, laboriosam aperiam nisi, assumenda fugiat ea dignissimos optio sit est debitis. Iusto error quis officiis amet saepe.</p>
-                        <p>Lorem ipsum doi, assumenda fugiat ea dignissimos optio sit est debitis. Iusto error quis officiis amet saepe.</p>
-                    </div>
-                </section>
-
             </main>
 
             <footer class="footer">
                 <div class="footer__main main-footer">
                     <div class="main-footer__container container">
                         <div class="main-footer__columns">
-
                             <!-- column1 -->
                             <div class="main-footer__column1 footer-column1 column">
                                 <a class="footer-column1__logo" href="#">
                                     <img src="assets/img/logo-white.svg" alt="logo" />
                                 </a>
                                 <p class="footer-column1__text">
-                                    Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.
+                                    Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned
+                                    professionals of software development.
                                 </p>
-    
+
                                 <!-- socials -->
                                 <ul class="footer-column1__socials socials">
                                     <li class="socials__item">
@@ -692,7 +809,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <!-- column2 -->
                             <div class="main-footer__column2 footer-column2 column">
                                 <p class="column__title">О компании</p>
@@ -717,9 +834,9 @@
                                     </li>
                                 </ul>
                             </div>
-    
+
                             <!-- column3 -->
-                            <div class="main-footer__column3  footer-column3 column">
+                            <div class="main-footer__column3 footer-column3 column">
                                 <p class="column__title">Наши услуги</p>
                                 <ul class="column__list">
                                     <li class="column__list-item">
@@ -739,9 +856,9 @@
                                     </li>
                                 </ul>
                             </div>
-    
+
                             <!-- column4 -->
-                            <div class="main-footer__column4  footer-column4 column">
+                            <div class="main-footer__column4 footer-column4 column">
                                 <p class="column__title">Контакты</p>
                                 <ul class="column__list">
                                     <li class="column__list-item">
@@ -768,16 +885,14 @@
                                             Mon - Fri: 9:00 - 18:00
                                         </span>
                                     </li>
-                                    
                                 </ul>
-    
+
                                 <p class="column__title mt32">Email рассылка</p>
                                 <form action="" class="footer__subscribeform subscribeform">
-                                    <input class="subscribeform__input" type="text" placeholder="Ваш E-mail" value="" name="">
+                                    <input class="subscribeform__input" type="text" placeholder="Ваш E-mail" value="" name="" />
                                     <button type="submit" class="subscribeform__btn btn btn-no-icon">Подписаться</button>
                                 </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -792,9 +907,7 @@
                                     <a class="bottom-footer__link" href="#">Privacy Policy</a>
                                 </li>
                             </ul>
-                            <p class="bottom-footer__copy">
-                                © 2012-2024 PathSoft. All rights reserved.
-                            </p>
+                            <p class="bottom-footer__copy">© 2012-2024 PathSoft. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -808,7 +921,7 @@
             <div class="modal__content">
                 <form class="modal__form" action="#">
                     <div class="modal__field">
-                        <label class="modal__label" for="callback__user-name">
+                        <label class="modal__label required" for="callback__user-name ">
                             <span class="modal__label-title">Имя</span>
                         </label>
                         <div class="modal__input-wrap">
@@ -827,7 +940,7 @@
                         </div>
                     </div>
                     <div class="modal__field">
-                        <label for="callback__user-phone" class="modal__label">
+                        <label class="modal__label required" for="callback__user-phone">
                             <span class="modal__label-title">Phone</span>
                         </label>
                         <div class="modal__input-wrap">
@@ -842,6 +955,20 @@
                             <svg class="modal__input-icon" width="16" height="16">
                                 <use href="./assets/svg/icons.svg#icon-phone"></use>
                             </svg>
+                        </div>
+                    </div>
+                    <div class="modal__field">
+                        <label class="modal__label required" for="user-comment">
+                            <span class="modal__label-title">Комментарий</span>
+                        </label>
+                        <div class="modal__input-wrap">
+                            <textarea
+                                id="user-comment"
+                                name="user-comment"
+                                class="modal__input modal__input-textarea"
+                                placeholder="текст сообщения"
+                                required
+                            ></textarea>
                         </div>
                     </div>
                     <button type="submit" class="modal__submit-btn">
