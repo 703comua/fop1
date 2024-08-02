@@ -337,6 +337,9 @@ blockquote {
 .text-center {
     text-align: center;
 }
+.text-left {
+	text-align: left;
+}
 .content-center {
     @include flex();
     justify-content: center;

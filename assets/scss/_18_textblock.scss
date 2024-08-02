@@ -1,0 +1,35 @@
+.textblock {
+    // background: var(--background-secondary-color);
+}
+
+.text__wrap {
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    }
+}
+.text__open-btn.active .icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}

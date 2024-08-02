@@ -19,13 +19,13 @@
     }
     .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        width: 30px;
-        height: 6px;
-        border-radius: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
         background-color: #fff;
         opacity: 1;
         &.swiper-pagination-bullet-active {
-            background: $redColor;
+            background: var(--accent-color);
         }
     }
 
@@ -44,22 +44,23 @@
         width: 40px;
         height: 40px;
         cursor: pointer;
-        background-color: #F0F4F8;
-        border: 1px solid #F0F4F8;
+        background: var(--background-color);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
         @include flex();
         justify-content: center;
         transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
 
         .icon {
-            fill: $basicColor;
+            fill: var(--accent-color);
             transition: fill 250ms ease-in-out;
         }
         &:hover,
         &:focus {
-            background-color: $redColor;
-            border-color: $redColor;
+            background-color: var(--background-secondary-color);
+            border-color: var(--background-secondary-color);
             .icon {
-                fill: #fff;
+                // fill: #fff;
             }
         }
 
@@ -74,13 +75,13 @@
         }
     }
     .swiper-button-prev-slide {
-        left: 0;
+        left: 10px;
         .icon {
             transform: rotate(90deg);
         }
     }
     .swiper-button-next-slide {
-        right: 0;
+        right: 10px;
         .icon {
             transform: rotate(-90deg);
         }
@@ -88,10 +89,9 @@
     .customer-reviews__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
     .aside-top-sale__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
     .top-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
-    .new-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .new-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
     .sale-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
-    .viewed-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
-    {
+    .viewed-products__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
         @include flex();
         justify-content: center;
         padding-top: 20px;
