@@ -267,7 +267,7 @@ $(document).ready(function () {
             // сворачиваем текстовый блок
             $(target).animate(
                 {
-                    maxHeight: 500, // ширина элемента
+                    maxHeight: 400, // высота элемента
                 },
                 {
                     duration: 300, // продолжительность анимации
