@@ -399,8 +399,7 @@ blockquote {
     &.jc-reverse {
         flex-direction: row-reverse;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         background: var(--el-gradient-start);
         .icon {
             right: 22px;
@@ -853,7 +852,7 @@ textarea {
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 10px 20px;
-    min-width: 260px;
+    // min-width: 260px;
     line-height: 1.7;
     &.lastname {
         width: 0;

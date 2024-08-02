@@ -50,6 +50,21 @@
                             </ul>
                         </address>
 
+                        <!-- language -->
+                        <ul class="languages">
+                            <li class="languages__item active">
+                                <span class="languages__link">RU</span>
+                            </li>
+                            <li class="languages__item">
+                                <a class="languages__link" href="#">
+                                    UA
+                                    <svg class="languages__icon" width="18" height="18">
+                                        <use href="./assets/svg/icons.svg#icon-ukraine"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
                         <!-- socials -->
                         <ul class="header__socials socials">
                             <li class="socials__item">
@@ -114,6 +129,22 @@
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#"> Контакты </a>
+                            </li>
+                            <li class="menu__item mob-languages">
+                                <!-- language -->
+                                <ul class="languages">
+                                    <li class="languages__item active">
+                                        <span class="languages__link">RU</span>
+                                    </li>
+                                    <li class="languages__item">
+                                        <a class="languages__link" href="#">
+                                            UA
+                                            <svg class="languages__icon" width="18" height="18">
+                                                <use href="./assets/svg/icons.svg#icon-ukraine"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="menu__item mob-contacts">
                                 <!-- address -->
@@ -190,7 +221,6 @@
             </header>
 
             <main class="main page">
-
                 <section class="page__intro intro section">
                     <div class="intro__container container">
                         <div class="intro__wrap">
@@ -278,15 +308,14 @@
                             <h3 class="intro__title">Получить консультацию</h3>
                             <form class="intro__form" action="">
                                 <p class="intro__text">
-                                    Вы можете бесплатно оставить вопрос, а также получить быстрый и гарантированный ответ через <span class="intro__link" data-fancybox data-src="#modal-callback">индивидуальную консультацию</span>.
+                                    Вы можете бесплатно оставить вопрос, а также получить быстрый и гарантированный ответ через
+                                    <span class="intro__link" data-fancybox data-src="#modal-callback">индивидуальную консультацию</span>.
                                 </p>
                                 <input class="input" type="text" placeholder="Имя" />
                                 <input class="input" type="text" placeholder="Email" />
                                 <textarea class="input" name="" id="" placeholder="Текст сообщения"></textarea>
 
-                                <button type="submit" class="btn btn-green btn-no-icon intro__btn">
-                                    Задать вопрос
-                                </button>
+                                <button type="submit" class="btn btn-green btn-no-icon intro__btn">Задать вопрос</button>
                             </form>
                         </div>
                     </div>
@@ -776,7 +805,9 @@
                             <p class="section-subtitle text-left">Консультация ФОП</p>
                             <h2 class="section-title text-left">Записаться на консультацию</h2>
                             <p class="order__text mb30">
-                                Задать вопрос либо получить предварительную консультацию можно по телефону <a class="order__link" href="#">+1-888-777-1234</a> или E-mail <a class="order__link" href="#">mail@example.com</a>. Так же Вы можете задать свой вопрос используя форму обратной связи на странице <a href="#">Контакты</a>.
+                                Задать вопрос либо получить предварительную консультацию можно по телефону
+                                <a class="order__link" href="#">+1-888-777-1234</a> или E-mail <a class="order__link" href="#">mail@example.com</a>.
+                                Так же Вы можете задать свой вопрос используя форму обратной связи на странице <a href="#">Контакты</a>.
                             </p>
                             <button class="btn" type="button" data-fancybox data-src="#modal-callback">
                                 Оставить заявку
@@ -941,14 +972,7 @@
                             <span class="modal__label-title">Имя</span>
                         </label>
                         <div class="modal__input-wrap">
-                            <input
-                                class="modal__input has-icon"
-                                type="text"
-                                id="callback__user-name"
-                                name="user-name"
-                                placeholder="Name"
-                                required
-                            />
+                            <input class="modal__input has-icon" type="text" id="callback__user-name" name="user-name" placeholder="Name" required />
                             <svg class="modal__input-icon" width="16" height="16">
                                 <use href="./assets/svg/icons.svg#icon-person"></use>
                             </svg>

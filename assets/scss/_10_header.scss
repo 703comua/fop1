@@ -42,6 +42,43 @@
             margin-right: 8px;
         }
 
+        /*-----------------*/
+        /*--- languages ---*/
+        /*-----------------*/
+        .languages {
+            @include flex();
+            &__item {
+                padding: 0 10px;
+                &:last-child {
+                    position: relative;
+                    padding-left: 11px;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        display: inline-block;
+                        height: 14px;
+                        border-left: 1px solid #e5ecf3;
+                        content: "";
+                    }
+                }
+            }
+            &__link {
+                color: #fff;
+                @include flex();
+                gap: 10px;
+            }
+            a.languages__link {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            span.languages__link {
+                opacity: 0.7;
+            }
+        }
+
         /*---------------*/
         /*--- socials ---*/
         /*---------------*/
@@ -217,6 +254,37 @@
                         }
                     }
                 }
+                &.mob-languages {
+                    display: block;
+                    @include flex();
+                    justify-content: center;
+                    padding: 20px 0;
+
+                    .languages {
+                        display: flex;
+                        gap: 10px;
+                        width: 100%;
+                        padding: 0 15px;
+                        &__item {
+                            // border: 1px solid var(--text-secondary);
+                            border: 1px solid var(--border-color);
+                            border-radius: 6px;
+                            @include flex();
+                            width: 50%;
+                            height: 40px;
+                            &.active, &:hover {
+                                background-color: var(--background-secondary-color);
+                            }
+                        }
+                        &__link {
+                            @include flex();
+                            justify-content: center;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
 
@@ -308,6 +376,9 @@
                 &__item {
                     @include flex();
                     &.mob-contacts {
+                        display: none;
+                    }
+                    &.mob-languages {
                         display: none;
                     }
                 }
