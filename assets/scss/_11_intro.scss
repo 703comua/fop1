@@ -179,6 +179,13 @@
             &__desc {
             }
             &__link {
+                color: var(--text-primary);
+                border-color: var(--text-primary);
+            }
+            &__icon {
+                &.icon {
+                    fill: var(--text-primary);
+                }
             }
         }
     }
